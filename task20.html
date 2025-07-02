@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Window</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff; /* Plain white background */
+      font-family: Arial, sans-serif;
+    }
+
+    .login-box {
+      width: 350px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 30px;
+      border-radius: 8px;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .login-box img {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    .login-box input[type="email"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      background: transparent;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .login-box label {
+      font-size: 13px;
+    }
+
+    .login-box a {
+      color: #5cb85c;
+      text-decoration: none;
+    }
+
+    .login-box input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .login-box button {
+      background-color: #28a745;
+      border: none;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 4px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+
+    .login-box button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User Icon">
+    <h2>LOGIN WINDOW</h2>
+    <form>
+      <input type="email" placeholder="Your Email Address" required>
+      <input type="password" placeholder="Your Password" required>
+      <div style="text-align: left; font-size: 13px;">
+        <input type="checkbox" id="terms">
+        <label for="terms">Agree With <a href="#">Terms & Condition</a></label>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+</body>
+</html>
